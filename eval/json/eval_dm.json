@@ -1,0 +1,1136 @@
+[
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": null,
+                    "abv": null,
+                    "ibu": null,
+                    "rating": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "style"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "IPA",
+                    "abv": null,
+                    "ibu": null,
+                    "rating": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "abv"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Stout",
+                    "abv": "low",
+                    "ibu": null,
+                    "rating": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "ibu"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Pilsner",
+                    "abv": "medium",
+                    "ibu": "low",
+                    "rating": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "rating"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Tripel",
+                    "abv": "high",
+                    "ibu": "medium",
+                    "rating": [
+                        4.0,
+                        5.0
+                    ]
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_recommendation"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Tripel",
+                    "abv": "medium",
+                    "ibu": "low",
+                    "rating": 4.0
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_recommendation"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Pilsner",
+                    "abv": "low",
+                    "ibu": "low",
+                    "rating": [
+                        4.0,
+                        5.0
+                    ]
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_recommendation"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Stout",
+                    "abv": "low",
+                    "ibu": null,
+                    "rating": [
+                        3.8,
+                        5.0
+                    ]
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "ibu"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Pilsner",
+                    "abv": "medium",
+                    "ibu": null,
+                    "rating": 4.2
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "ibu"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Stout",
+                    "abv": null,
+                    "ibu": "medium",
+                    "rating": 3.5
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "abv"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "IPA",
+                    "abv": null,
+                    "ibu": "high",
+                    "rating": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "abv"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Lager",
+                    "abv": "low",
+                    "ibu": "medium",
+                    "rating": 4.0
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_recommendation"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Pilsner",
+                    "abv": "high",
+                    "ibu": "high",
+                    "rating": [
+                        4.0,
+                        5.0
+                    ]
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_recommendation"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": null,
+                    "abv": "high",
+                    "ibu": null,
+                    "rating": [
+                        4.0,
+                        5.0
+                    ]
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "style"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "IPA",
+                    "abv": "medium",
+                    "ibu": "medium",
+                    "rating": [
+                        4.0,
+                        5.0
+                    ]
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_recommendation"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": null,
+                    "brewery": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "name"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Punk IPA",
+                    "brewery": null
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": null,
+                    "brewery": "Russian River"
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "name"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Pliny the Elder",
+                    "brewery": "Russian River"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Lagunitas IPA",
+                    "brewery": "Guinness"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Lagunitas IPA",
+                    "brewery": "Duvel Moortgat"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Pliny the Elder",
+                    "brewery": "Russian River"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Guinness Draught",
+                    "brewery": "Guinness"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Duvel",
+                    "brewery": null
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Duvel",
+                    "brewery": "Duvel Moortgat"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Chimay Blue",
+                    "brewery": null
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_beer_info"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": null,
+                    "brewery": "Guinness"
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "name"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "brewery"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": "BrewDog"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "list_beers_by_brewery"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": "Guinness"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "list_beers_by_brewery"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "brewery"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": "Sierra Nevada"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "list_beers_by_brewery"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "brewery"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": "Sierra Nevada"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "list_beers_by_brewery"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": "Chimay"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "list_beers_by_brewery"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "style"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "IPA"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_top_rated"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "Stout"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_top_rated"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "Stout"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_top_rated"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "IPA"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_top_rated"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "Lager"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_top_rated"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "Sour"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_top_rated"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "Lager"
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "get_top_rated"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": null,
+                    "rating": null,
+                    "comment": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "name"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Sierra Nevada Pale Ale",
+                    "rating": null,
+                    "comment": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "rating"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Punk IPA",
+                    "rating": 4.5,
+                    "comment": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "comment"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Pliny the Elder",
+                    "rating": 5.0,
+                    "comment": "Outstanding balance and hop profile."
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "rate_beer"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": null,
+                    "rating": 5.0,
+                    "comment": "Very well balanced."
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "name"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": null,
+                    "rating": 3.2,
+                    "comment": "Really liked it."
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "name"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Lagunitas IPA",
+                    "rating": 5.0,
+                    "comment": "Very well balanced."
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "rate_beer"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Chimay Blue",
+                    "rating": 3.2,
+                    "comment": "Very well balanced."
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "rate_beer"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Chimay Blue",
+                    "rating": 3.8,
+                    "comment": "Really liked it."
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "rate_beer"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Duvel",
+                    "rating": 4.6,
+                    "comment": "Really liked it."
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "rate_beer"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Guinness Draught",
+                    "rating": 5.0,
+                    "comment": "Very well balanced."
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "rate_beer"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Guinness Draught",
+                    "rating": 4.6,
+                    "comment": null
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "comment"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": null,
+                    "rating": 3.8,
+                    "comment": "Nice carbonation and finish."
+                }
+            }
+        ],
+        "output": {
+            "action": "request_info",
+            "parameter": "name"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Duvel",
+                    "rating": 3.2,
+                    "comment": "Too bitter for me."
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "rate_beer"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Guinness Draught",
+                    "rating": 3.2,
+                    "comment": "Nice carbonation and finish."
+                }
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "rate_beer"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "out_of_context",
+                "slots": {}
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "out_of_context"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "out_of_context",
+                "slots": {}
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "out_of_context"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "out_of_context",
+                "slots": {}
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "out_of_context"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "out_of_context",
+                "slots": {}
+            }
+        ],
+        "output": {
+            "action": "confirmation",
+            "parameter": "out_of_context"
+        }
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Gose",
+                    "abv": null,
+                    "ibu": "low",
+                    "rating": null
+                }
+            },
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": "Chimay Blue",
+                    "brewery": null
+                }
+            }
+        ],
+        "output": [
+            {
+                "action": "request_info",
+                "parameter": "abv"
+            },
+            {
+                "action": "confirmation",
+                "parameter": "get_beer_info"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "Stout"
+                }
+            },
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": null
+                }
+            }
+        ],
+        "output": [
+            {
+                "action": "confirmation",
+                "parameter": "get_top_rated"
+            },
+            {
+                "action": "request_info",
+                "parameter": "brewery"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Lager",
+                    "abv": "medium",
+                    "ibu": null,
+                    "rating": null
+                }
+            },
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Guinness Draught",
+                    "rating": 5.0,
+                    "comment": null
+                }
+            }
+        ],
+        "output": [
+            {
+                "action": "request_info",
+                "parameter": "ibu"
+            },
+            {
+                "action": "request_info",
+                "parameter": "comment"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "intent": "out_of_context",
+                "slots": {}
+            },
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "name": null,
+                    "brewery": "Duvel Moortgat"
+                }
+            }
+        ],
+        "output": [
+            {
+                "action": "confirmation",
+                "parameter": "out_of_context"
+            },
+            {
+                "action": "request_info",
+                "parameter": "name"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "intent": "get_top_rated",
+                "slots": {
+                    "style": "IPA"
+                }
+            },
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": "Guinness"
+                }
+            }
+        ],
+        "output": [
+            {
+                "action": "confirmation",
+                "parameter": "get_top_rated"
+            },
+            {
+                "action": "confirmation",
+                "parameter": "list_beers_by_brewery"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": null,
+                    "abv": null,
+                    "ibu": "medium",
+                    "rating": null
+                }
+            },
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Duvel",
+                    "rating": null,
+                    "comment": null
+                }
+            }
+        ],
+        "output": [
+            {
+                "action": "request_info",
+                "parameter": "style"
+            },
+            {
+                "action": "request_info",
+                "parameter": "rating"
+            }
+        ]
+    }
+]

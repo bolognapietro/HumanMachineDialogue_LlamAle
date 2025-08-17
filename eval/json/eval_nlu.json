@@ -1,0 +1,705 @@
+[
+    {
+        "input": "Recommend me a hoppy IPA around 6% ABV",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "IPA",
+                "abv": "medium"
+            }
+        }
+    },
+    {
+        "input": "Find a Stout with low bitterness and high rating",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Stout",
+                "ibu": "low",
+                "rating": [4.0, 5.0]
+            }
+        }
+    },
+    {
+        "input": "Suggest a Pilsner with IBU between 20 and 30",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Pilsner",
+                "ibu": "medium"
+            }
+        }
+    },
+    {
+        "input": "Tell me about Punk IPA",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "name": "Punk IPA"
+            }
+        }
+    },
+    {
+        "input": "Give me details on a beer from Sierra Nevada",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "brewery": "Sierra Nevada"
+            }
+        }
+    },
+    {
+        "input": "Information about Pliny the Elder by Russian River",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "name": "Pliny the Elder",
+                "brewery": "Russian River"
+            }
+        }
+    },
+    {
+        "input": "List beers from BrewDog",
+        "output": {
+            "intent": "list_beers_by_brewery",
+            "slots": {
+                "brewery": "BrewDog"
+            }
+        }
+    },
+    {
+        "input": "What beers are made by Guinness?",
+        "output": {
+            "intent": "list_beers_by_brewery",
+            "slots": {
+                "brewery": "Guinness"
+            }
+        }
+    },
+    {
+        "input": "Show me the top rated IPAs",
+        "output": {
+            "intent": "get_top_rated",
+            "slots": {
+                "style": "IPA"
+            }
+        }
+    },
+    {
+        "input": "Which Stouts are highest rated?",
+        "output": {
+            "intent": "get_top_rated",
+            "slots": {
+                "style": "Stout"
+            }
+        }
+    },
+    {
+        "input": "I rate Punk IPA 4.2",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Punk IPA",
+                "rating": 4.2
+            }
+        }
+    },
+    {
+        "input": "Give Sierra Nevada Pale Ale a rating of 3.8",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Pale Ale",
+                "rating": 3.8
+            }
+        }
+    },
+    {
+        "input": "Pliny the Elder gets a perfect 5",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Pliny the Elder",
+                "rating": 5.0
+            }
+        }
+    },
+    {
+        "input": "What's the weather today?",
+        "output": {
+            "intent": "out_of_context",
+            "slots": {}
+        }
+    },
+    {
+        "input": "How far is the moon?",
+        "output": {
+            "intent": "out_of_context",
+            "slots": {}
+        }
+    },
+    {
+        "input": "Exit the program",
+        "output": {
+            "intent": "terminate_system",
+            "slots": {}
+        }
+    },
+    {
+        "input": "Quit",
+        "output": {
+            "intent": "terminate_system",
+            "slots": {}
+        }
+    },
+    {
+        "input": "Recommend a quadrupel, with low bitterness",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "quadrupel",
+                "ibu": "low"
+            }
+        }
+    },
+    {
+        "input": "Recommend a Tripel, around 4% ABV, rated at least 3.9",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Tripel",
+                "abv": "low",
+                "rating": [3.9, 5.0]
+            }
+        }
+    },
+    {
+        "input": "Recommend a brown ale, around 4.5% ABV, with low bitterness",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Brown Ale",
+                "abv": "low",
+                "ibu": "low"
+            }
+        }
+    },
+    {
+        "input": "Recommend a wheat, between 5.0 and 6.0%",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Wheat",
+                "abv": "medium"
+            }
+        }
+    },
+    {
+        "input": "Recommend a Saison, around 5.5% ABV, about 20 IBU, rated at least 4.4",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Saison",
+                "abv": "medium",
+                "ibu": "low",
+                "rating": [4.4, 5.0]
+            }
+        }
+    },
+    {
+        "input": "Recommend a Helles, between 4.0-4.5%, IBU 15, rated 4.5",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Helles",
+                "abv": "low",
+                "ibu": "low",
+                "rating": 4.5
+            }
+        }
+    },
+    {
+        "input": "Recommend a Pilsner, between 6.0 and 7.5%, about 30 IBU",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Pilsner",
+                "abv": "medium",
+                "ibu": "medium"
+            }
+        }
+    },
+    {
+        "input": "Recommend a Amber Ale, around 7.5% ABV, with low bitterness, rated 4.7",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Amber Ale",
+                "abv": "medium",
+                "ibu": "low",
+                "rating": 4.7
+            }
+        }
+    },
+    {
+        "input": "Recommend a Pilsner, between 3.5-4.5%, IBU 65-80, rated at least 3.0",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Pilsner",
+                "abv": "low",
+                "ibu": "high",
+                "rating": [3.0, 5.0]
+            }
+        }
+    },
+    {
+        "input": "Recommend a Tripel, around 5% ABV, with a rating between 4.0 and 4.5",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Tripel",
+                "abv": "medium",
+                "rating": [4.0, 4.5]
+            }
+        }
+    },
+    {
+        "input": "Recommend a Stout, IBU 20-35, rated 4.0 to 4.5",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Stout",
+                "ibu": "medium",
+                "rating": [4.0, 4.5]
+            }
+        }
+    },
+    {
+        "input": "Recommend a Bock, around 7.5% ABV, with low bitterness, rated 4.6",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Bock",
+                "abv": "medium",
+                "ibu": "low",
+                "rating": 4.6
+            }
+        }
+    },
+    {
+        "input": "Recommend a Pilsner, between 5-7%, IBU 30-50, rated at least 4.3",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Pilsner",
+                "abv": "medium",
+                "ibu": "medium",
+                "rating": [4.3, 5.0]
+            }
+        }
+    },
+    {
+        "input": "Recommend a Gose, around 7.5% ABV, IBU 30-50, rated 4.5",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Gose",
+                "abv": "medium",
+                "ibu": "medium",
+                "rating": 4.5
+            }
+        }
+    },
+    {
+        "input": "Recommend a Porter, about 10 IBU, rated at least 4.3",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Porter",
+                "ibu": "low",
+                "rating": [4.3, 5.0]
+            }
+        }
+    },
+    {
+        "input": "Recommend a Dunkel, around 5% ABV",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Dunkel",
+                "abv": "medium"
+            }
+        }
+    },
+    {
+        "input": "Recommend a Barleywine",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Barleywine"
+            }
+        }
+    },
+    {
+        "input": "Recommend a Saison, with low bitterness, rated 4.0",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Saison",
+                "ibu": "low",
+                "rating": 4.0
+            }
+        }
+    },
+    {
+        "input": "Recommend a Bock, with low bitterness, with a rating from 2.5 to 4.0",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Bock",
+                "ibu": "low",
+                "rating": [2.5, 4.0]
+            }
+        }
+    },
+    {
+        "input": "Recommend a Pale Ale, around 5% ABV",
+        "output": {
+            "intent": "get_beer_recommendation",
+            "slots": {
+                "style": "Pale Ale",
+                "abv": "medium"
+            }
+        }
+    },
+    {
+        "input": "Give me details on a beer from Guinness",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "brewery": "Guinness"
+            }
+        }
+    },
+    {
+        "input": "Tell me about Westmalle Tripel by Omnipollo",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "name": "Westmalle Tripel",
+                "brewery": "Omnipollo"
+            }
+        }
+    },
+    {
+        "input": "Give me informations about Delirium Tremens by Guinness",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "name": "Delirium Tremens",
+                "brewery": "Guinness"
+            }
+        }
+    },
+    {
+        "input": "Tell me something about Chimay Blue by Russian River",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "name": "Chimay Blue",
+                "brewery": "Russian River"
+            }
+        }
+    },
+    {
+        "input": "Let me know about Pliny the Elder by Brooklyn Brewery",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "name": "Pliny the Elder",
+                "brewery": "Brooklyn Brewery"
+            }
+        }
+    },
+    {
+        "input": "Let me know about Guinness Draught",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "name": "Guinness Draught"
+            }
+        }
+    },
+    {
+        "input": "Give me details on a beer from Stone Brewing",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "brewery": "Stone Brewing"
+            }
+        }
+    },
+    {
+        "input": "Give me some infos on a beer from Weihenstephan",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "brewery": "Weihenstephan"
+            }
+        }
+    },
+    {
+        "input": "Give me details on a beer from Beavertown",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "brewery": "Beavertown"
+            }
+        }
+    },
+    {
+        "input": "Tell me about Delirium Tremens",
+        "output": {
+            "intent": "get_beer_info",
+            "slots": {
+                "name": "Delirium Tremens"
+            }
+        }
+    },
+    {
+        "input": "What beers are made by Mikkeller?",
+        "output": {
+            "intent": "list_beers_by_brewery",
+            "slots": {
+                "brewery": "Mikkeller"
+            }
+        }
+    },
+    {
+        "input": "What beers are made by Beavertown?",
+        "output": {
+            "intent": "list_beers_by_brewery",
+            "slots": {
+                "brewery": "Beavertown"
+            }
+        }
+    },
+    {
+        "input": "List beers from Sierra Nevada",
+        "output": {
+            "intent": "list_beers_by_brewery",
+            "slots": {
+                "brewery": "Sierra Nevada"
+            }
+        }
+    },
+    {
+        "input": "Show me beers from Russian River",
+        "output": {
+            "intent": "list_beers_by_brewery",
+            "slots": {
+                "brewery": "Russian River"
+            }
+        }
+    },
+    {
+        "input": "Show me beers from Cantillon",
+        "output": {
+            "intent": "list_beers_by_brewery",
+            "slots": {
+                "brewery": "Cantillon"
+            }
+        }
+    },
+    {
+        "input": "What beers are made by Weihenstephan?",
+        "output": {
+            "intent": "list_beers_by_brewery",
+            "slots": {
+                "brewery": "Weihenstephan"
+            }
+        }
+    },
+    {
+        "input": "Which are the top rated Lagers",
+        "output": {
+            "intent": "get_top_rated",
+            "slots": {
+                "style": "Lager"
+            }
+        }
+    },
+    {
+        "input": "Show me the top rated IPAs",
+        "output": {
+            "intent": "get_top_rated",
+            "slots": {
+                "style": "IPA"
+            }
+        }
+    },
+    {
+        "input": "Which Hefeweizens are highest rated?",
+        "output": {
+            "intent": "get_top_rated",
+            "slots": {
+                "style": "Hefeweizen"
+            }
+        }
+    },
+    {
+        "input": "Top rated Porters",
+        "output": {
+            "intent": "get_top_rated",
+            "slots": {
+                "style": "Porter"
+            }
+        }
+    },
+    {
+        "input": "Show me the top rated Dunkels",
+        "output": {
+            "intent": "get_top_rated",
+            "slots": {
+                "style": "Dunkel"
+            }
+        }
+    },
+    {
+        "input": "The beer Orval gets 3.6 for me",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Orval",
+                "rating": 3.6
+            }
+        }
+    },
+    {
+        "input": "I rate Old Flame 3.7",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Old Flame",
+                "rating": 3.7
+            }
+        }
+    },
+    {
+        "input": "Goose Island IPA gets 4.5",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Goose Island IPA",
+                "rating": 4.5
+            }
+        }
+    },
+    {
+        "input": "Give Westmalle Tripel a rating of 4.6",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Westmalle Tripel",
+                "rating": 4.6
+            }
+        }
+    },
+    {
+        "input": "I rate Duvel 4.2",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Duvel",
+                "rating": 4.2
+            }
+        }
+    },
+    {
+        "input": "Nostradamus beer gets 4.6. This beer is very well balanced",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Nostradamus",
+                "rating": 4.6,
+                "comment": "This beer is very well balanced"
+            }
+        }
+    },
+    {
+        "input": "Give Cream Stout a rating of 3.4. I think it's a good beer",
+        "output": {
+            "intent": "rate_beer",
+            "slots": {
+                "name": "Cream Stout",
+                "rating": 3.4,
+                "comment": "I think it's a good beer"
+            }
+        }
+    },
+    {
+        "input": "Tell me a joke",
+        "output": {
+            "intent": "out_of_context",
+            "slots": {}
+        }
+    },
+    {
+        "input": "What time is it in Tokyo?",
+        "output": {
+            "intent": "out_of_context",
+            "slots": {}
+        }
+    },
+    {
+        "input": "Close the app",
+        "output": {
+            "intent": "terminate_system",
+            "slots": {}
+        }
+    },
+    {
+        "input": "Terminate the system",
+        "output": {
+            "intent": "terminate_system",
+            "slots": {}
+        }
+    },
+    {
+        "input": "List beers from BrewDog and also give me details on a beer from Russian River.",
+        "output": [
+            {
+                "intent": "list_beers_by_brewery",
+                "slots": {
+                    "brewery": "BrewDog"
+                }
+            },
+            {
+                "intent": "get_beer_info",
+                "slots": {
+                    "brewery": "Russian River"
+                }
+            }
+        ]
+    },
+    {
+        "input": "Recommend me a Stout with low bitterness and then rate Goose Island IPA 4.5.",
+        "output": [
+            {
+                "intent": "get_beer_recommendation",
+                "slots": {
+                    "style": "Stout",
+                    "ibu": "low"
+                }
+            },
+            {
+                "intent": "rate_beer",
+                "slots": {
+                    "name": "Goose Island IPA",
+                    "rating": 4.5
+                }
+            }
+        ]
+    }
+]
