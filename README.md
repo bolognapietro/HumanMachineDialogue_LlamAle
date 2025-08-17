@@ -12,14 +12,12 @@
   <br/>
   MSc Project – University of Trento – A.Y. 2024/2025  
 </p>
-
+<p align="center">
+  <img src="assets/LlamAle.png" width="200px" alt="AleAgent Logo"/>
+</p>
 <p align="center">
   Developed by:<br/>
   <strong>Pietro Bologna</strong>
-</p>
-
-<p align="center">
-  <img src="assets/LlamAle.png" width="200px" alt="AleAgent Logo"/>
 </p>
 
 - [Overview](#overview)
@@ -29,11 +27,12 @@
 - [Running the Chatbot](#-running-the-chatbot)
 - [Contact](#-contact)
 
----
-
 # Overview
 
 **LlamAle** is a conversational assistant designed to guide users through the world of beer. From giving personalized recommendations to logging beer ratings, AleAgent simulates the behavior of a knowledgeable and friendly digital brewmaster.
+
+📄 [Read the Full Report](assets/HMD_Project_Report.pdf)  
+🎥 [Watch the Demo Video](https://www.youtube.com/watch?v=EFnWklt_vkg&t=1s)
 
 You can interact naturally using requests like:
 
@@ -91,10 +90,6 @@ ollama run llama3
 
 ## 💬 Running the Chatbot
 Once the dataset and model are ready, you can launch the assistant with:
-```bash
-python main.py
-```
-
 ```bash
 python main.py
 ```
